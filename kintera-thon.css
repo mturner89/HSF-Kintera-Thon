@@ -1,0 +1,657 @@
+/***************  By: Michael Turner   ********************/
+/***************  Date: May.9.2016    *********************/
+/***************  HSF: Kintera Thon's  *******************/
+html {
+	font-family: 'Roboto','Open Sans',sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/********************** Container Styles *************************************/
+.container,
+.container-fw {
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:15px;
+	padding-left:15px;	
+}
+.row-wrapper {
+	/*margin-left:-15px;
+	margin-right:-15px;	*/	
+}
+.row-wrapper:before,
+.row-wrapper:after {
+	display:table;
+	content:" ";
+}
+.row-wrapper:after {
+	clear:both;
+}
+.row-wrapper-adaptive {
+	overflow: hidden;	
+	column-gap: 15px;
+	column-fill: auto;	
+	margin-top: 15px;
+	margin-bottom:15px;
+	margin-right:-15px;
+	margin-left:-15px;
+}
+@media only screen and (max-width:3000px){
+	.container,
+	.nav-container{
+		width:1600px;
+	}
+}
+@media only screen and (max-width:1700px){
+	.container,
+	.nav-container{
+		width:1400px;
+	}
+}
+@media only screen and (max-width:1500px){
+	.container,
+	.nav-container{
+		width:1200px;
+	}
+}
+@media only screen and (max-width:1300px){
+	.container,
+	.nav-container{
+		width:1000px;
+	}
+}
+@media only screen and (max-width:1050px){
+	.container ,
+	.nav-container{
+		width:900px;
+	}
+}
+@media only screen and (max-width:950px){
+	.container,
+	.nav-container	{
+		width:100%;
+		padding:0px;
+	}
+	.row-wrapper {
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.row-wrapper-adaptive {
+		padding-left:15px;
+		padding-right:15px;
+		margin-left:0px;
+		margin-right:0px;
+	}
+}
+/************************ End Container Styles **********************************/
+
+/************************* Column Styles ****************************************/
+.col-1, .col-2, .col-3, .col-4,
+.col-5, .col-6, .col-7, .col-8,
+.col-9, .col-10, .col-11, .col-12 
+{
+	position:relative;	
+	float:left;
+}
+.col-1 {
+	width:8.333%;
+}
+.col-2 {
+	width:16.666%;
+}
+.col-3 {
+	width:25%;
+}
+.col-4 {
+	width:20%;
+}
+.col-5 {
+	width:41.666%;
+}
+.col-6 {
+	width:50%;
+}
+.col-7 {
+	width:58.333%;
+}
+.col-8 {
+	width:66.666%;
+}
+.col-9 {
+	width:75%;
+}
+.col-10 {
+	width:83.333%;
+}
+.col-11 {
+	width:91.666%;
+}
+.col-12 {
+	width:100%;
+}
+.col-2-adaptive {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 2;
+	-moz-column-gap: 15px;
+	-moz-column-fill: auto;
+	column-count: 2;
+}
+.col-3-adaptive {
+	-webkit-column-count: 3;
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 15px;
+	-moz-column-fill: auto;
+	column-count: 3;
+}
+.col-4-adaptive {
+	-webkit-column-count: 4;
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 4;
+	-moz-column-gap: 15px;
+	-moz-column-fill: auto;
+	column-count: 4;
+}
+.col-5-adaptive {
+	-webkit-column-count: 5;
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 5;
+	-moz-column-gap: 15px;
+	-moz-column-fill: auto;
+	column-count: 5;
+}
+.col-6-adaptive {
+	-webkit-column-count: 6;
+	-webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 6;
+	-moz-column-gap: 15px;
+	-moz-column-fill: auto;
+	column-count: 6;
+}
+.col-adaptive {
+	margin-bottom: 15px;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+.spacer {
+	padding:15px;
+}
+.spacer-med {
+	padding:30px;
+}
+.spacer-lrg {
+	padding:50px;
+}
+
+
+@media only screen and (max-width:950px){
+	.col-1, .col-2, .col-3, .col-4,
+	.col-5, .col-6, .col-7, .col-8,
+	.col-9, .col-10, .col-11, .col-12
+	{
+		width:100%;
+		padding:0px;
+	}
+	.col-2-adaptive, .col-3-adaptive, .col-4-adaptive,
+	.col-5-adaptive, .col-6-adaptive 
+	{
+		-webkit-column-count: 2;
+		-webkit-column-gap: 15px;
+		-webkit-column-fill: auto;
+		-moz-column-count: 2;
+		-moz-column-gap: 15px;
+		-moz-column-fill: auto;
+		column-count: 2;
+	}
+}
+/********************************* End of Column Styles ***********************************/
+
+
+/************************ Navigation Styles ************************************/
+.nav-wrapper,
+.nav-container {
+	height:180px;	
+}
+.nav-wrapper {
+	width:100%;
+	margin-bottom:10px;
+}
+.nav-container {
+	margin-left:auto;
+	margin-right:auto;
+}
+.collapse-nav {
+	float:left;
+	margin-right:10px;
+	margin-left:10px;
+	width:25px;
+	height:100%;
+	cursor:pointer;
+	display:none;
+}
+.collapse-nav > p:first-child {
+	margin-top:40px;
+}
+.collapse-nav > p {
+	height:3px;	
+	background-color:#000;
+	margin:0px;
+	margin-bottom:3px;	
+}
+.nav-logo  {
+	float:left;
+	/*padding:5px;*/
+}
+.nav-items {
+	float:left;
+	display:none;
+}
+.nav-items  > ul{
+	list-style-type:none;
+	color:#252528;
+}
+.nav-items  > ul > li{	
+	padding-left:10px;
+	padding-right:10px;	
+}
+.nav-menu {
+	display:none;
+}
+
+@media only screen and (max-width:950px){	
+	.nav-wrapper,
+	.nav-container {
+		height:auto;		
+	}
+	.nav-logo {
+		margin-bottom:15px;
+	}
+	.nav_container{
+		width:100%;
+	}
+	.nav-menu {
+		display:block;
+		cursor:pointer;
+		text-align:center;
+	}
+	.nav-menu  > p{
+		background-color:#252528;
+		color:#fff;
+		padding:10px;
+		font-weight:bold;
+		font-size:16px;
+	}
+	.collapse-nav > p:first-child {
+		margin-top:20px;
+	}
+	.nav-items {
+		clear:both;
+		width:100%;
+		margin-top:-15px;
+	}
+	.nav-items-toggle {
+		display:block;
+	}
+	.nav-items  > ul {
+		text-align:center;
+		margin-top:0px;
+		padding-left:0px;
+		background-color:#f2f2f2;
+	}
+	.nav-items  > ul > li{
+		display:block;
+		padding-bottom:10px;
+		padding-top:10px;
+		border-bottom:1px solid #ccc;			
+	}
+	.nav-items > ul > li:hover {
+		background-color:#da291c;
+		color:#fff;
+		cursor:pointer;
+	}	
+	.collapse-nav {
+		display:block;
+	}	
+	.nav-logo > img {
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+/*************************** End of Navigation Styles **************************/
+
+
+
+
+
+
+/********************************** Button Styles *********************************/
+.btn {		
+	background-image:none;
+	border:1px solid transparent;
+	display:block;
+	border-radius:8px;
+	font-family:'Roboto','Open Sans',sans-serif;
+	font-size:14px;
+	font-weight:400;
+	cursor:pointer;
+	padding:10px 15px;
+	text-decoration:none;
+}
+.btn:hover, .btn:active, .btn:visited {
+	border:1px solid transparent;
+	color:#fff;
+}
+.btn-blue {
+	background-color:#005f95;
+	color:#fff;	
+}
+.btn-red {
+	background-color:#e0201b;
+	color:#fff;	
+}
+.btn-red2 {
+	background-color:#da291c;
+	color:#fff;
+}
+.btn-yellow {
+	background-color:#ffd900;
+	color:#000;	
+}
+.btn-orange {
+	background-color:#ff5f00;
+	color:#000;	
+}
+.btn-pink {
+	background-color:#d30053;
+	color:#fff;	
+}
+.btn-pink2 {
+	background-color:#dd2695;
+	color:#000;	
+}
+.btn-purple {
+	background-color:#4d008a;
+	color:#fff;	
+}
+.btn-blue2 {
+	background-color:#0081c8;
+	color:#fff;	
+}
+.btn-green {
+	background-color:#1b881b;
+	color:#fff;	
+}
+.btn-green2 {
+	background-color:#004a00;
+	color:#fff;	
+}
+.btn-gray {
+	background-color:#5d646c;
+	color:#fff;	
+}
+.btn-gray2 {
+	background-color:#252528;
+	color:#fff;	
+}
+/********************************** End of Button Styles ************************************/
+
+
+/********************************** Text Styles *********************************************/
+.super-header {
+	font-weight:600;
+	font-size:50px;
+	margin:0px;
+	padding-top:15px;
+	padding-bottom:15px;
+	color:#000;
+}
+.super-header-fine {
+	font-weight:400;
+	font-size:50px;
+	margin:0px;
+	padding-top:15px;
+	padding-bottom:15px;
+	color:#000;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight:600;
+}
+p {
+	font-size:16px;
+	line-height:1.5;
+	font-weight:300;
+	font-family:'Roboto','Open Sans',sans-serif;
+	margin-bottom:15px;
+	color:#5d646c;
+}
+.quote-left {
+	float:left;
+	max-width:350px;
+	color:#5d646c;
+	margin-right:40px;
+	font-size:20px;
+	border-left:3px solid #0081c8;
+	padding-left:15px;
+	text-align:left;	
+}
+.quote-right {
+	float:right;
+	max-width:350px;
+	color:#5d646c;
+	margin-left:40px;
+	font-size:20px;
+	border-right:3px solid #0081c8;
+	padding-right:15px;
+	text-align:right;
+}
+img {
+	display:block;
+	max-width:100%;
+	height:auto;
+}
+/******************************** End of Text Styles *****************************************/
+
+/********************************* Table Styles **********************************************/
+table {
+	width:100%;
+	max-width:100%;
+}
+.table-striped > thead > tr > th,
+.table-purple-striped > thead > tr > th,
+.table-green-striped > thead > tr > th,
+.table-blue-striped > thead > tr > th,
+.table-yellow-striped > thead > tr > th,
+.table-pink-striped > thead > tr > th,
+.table-red-striped > thead > tr > th {
+	text-align:left;
+	vertical-align:bottom;
+	border-bottom:2px solid #ccc;
+	padding:10px;
+}
+.table-striped > tbody > tr:nth-child(2n) {
+	background-color:#eee;
+}
+.table-striped > tbody > tr  > td,
+.table-purple-striped > tbody > tr  > td, 
+.table-green-striped > tbody > tr  > td, 
+.table-blue-striped > tbody > tr  > td, 
+.table-yellow-striped > tbody > tr  > td, 
+.table-red-striped > tbody > tr  > td {
+	padding:10px;	
+}
+.table-purple-striped > tbody > tr:nth-child(2n) {
+	background-color:rgba(77,0,138,0.4);
+}
+.table-blue-striped > tbody > tr:nth-child(2n) {
+	background-color:rgba(0,95,149,0.8);
+}
+.table-green-striped > tbody > tr:nth-child(2n) {
+	background-color:rgba(0,74,0,0.4);
+}
+
+.table-purple-striped > tbody > tr:nth-child(-n+3),
+.table-green-striped > tbody > tr:nth-child(-n+3),
+.table-blue-striped > tbody > tr:nth-child(-n+3),
+.table-yellow-striped > tbody > tr:nth-child(-n+3),
+.table-pink-striped > tbody > tr:nth-child(-n+3),
+.table-red-striped > tbody > tr:nth-child(-n+3){
+	font-weight:bold;
+}
+
+/********************************* End of Table Styles **********************************************/
+
+
+
+/*********************************************************************************************************/
+/********************************* Kintera Thon Specific Styles ******************************************/
+/*********************************************************************************************************/
+
+
+/************************************* Left Nav Styles *********************/
+.left_wrapper {
+	width:230px;
+	display:inline-block;
+	vertical-align:top;
+}
+#left-menu {
+	margin-left:10px;
+}
+.left-nav {
+	background-color:#f5f5f5;
+	border-radius:8px;
+	padding:15px;
+	border:1px solid #5d646c;
+	margin-bottom:20px;
+}
+.left-nav > p {
+	color:#da291c;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:16px;
+	margin:0px;
+}
+.left-nav > ul {
+	list-style-type:none;
+	padding:0px;
+	margin-top:5px;
+	margin:0px;
+}
+.left-nav > ul  > li{
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight:300;
+}
+
+/************************* Body contents Styles ***************************/
+.body-wrapper {
+	width:680px;
+	display:inline-block;
+	margin-top:-20px;
+}
+.right-wrapper {
+	width:230px;
+	display:inline-block;
+	vertical-align:top;
+	margin-top:-15px;
+}
+.center-wrapper {
+	width:450px;
+	display:inline-block;
+}
+.body-contents,
+.right-side-contents {
+	padding-left:10px;
+	padding-right:10px;
+}
+.page-title {
+	color:#252528;
+	font-size:30px;
+	margin-top:0px;
+	font-weight:400;
+	text-align:center;
+}
+.sub-title {
+	background-color:#da291c;
+	color:#fff;
+	padding:5px;
+	font-weight:400;
+}
+.sub-title-right {
+	background-color:#4d4d4d;
+	color:#fff;
+	padding:5px;
+	font-weight:400;
+	 border-radius: 8px 8px 0px 0px;
+}
+.top-fundraisers  {
+	padding:0px;
+	margin-top:0px;
+	list-style-type:none;
+	margin-bottom:5px;
+}
+.top-fundraisers > li {
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#5d646c;
+	padding-left:10px;
+}
+.top-fundraisers > li:nth-child(2n) {
+	background-color:#f5f5f5;
+}
+
+
+/************************* Media Querries *****************************************/
+@media only screen and (max-width:950px){	
+	#left-menu,
+	.left-wrapper,
+	.FAFLeftNavTd{
+		display:none;
+	}
+	.body-wrapper,
+	.FAFBodyTable{
+		width:100%;
+	}
+	.center-wrapper {
+		width:70%;
+	}
+	.right-wrapper {
+		width:30%;
+	}
+	.fafBodyInner {
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+	.FAFOuterTable {
+		margin-top:-15px;
+	}
+	
+}
+@media only screen and (max-width:600px){	
+	.center-wrapper {
+		width:100%;
+	}
+	.right-wrapper {
+		width:100%;
+		margin-top:20px;
+	}
+	table, tbody, tr, td {
+		padding:0px;
+	}
+	
+}
+
+
+
+
+
+
+

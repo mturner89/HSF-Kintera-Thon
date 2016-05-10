@@ -618,7 +618,8 @@ table {
 .footer {
 	padding:10px 0;	
 	font-size:10px;
-	color:;#777;
+	color:#777;
+	text-align:center;
 }
 .footerLink {
 	text-decoration:none;

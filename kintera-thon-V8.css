@@ -558,13 +558,13 @@ table {
 .body-wrapper {
 	width:680px;
 	display:inline-block;
-	margin-top:-20px;
+/*	margin-top:-20px;*/
 }
 .right-wrapper {
 	width:230px;
 	display:inline-block;
 	vertical-align:top;
-	margin-top:-15px;
+/*	margin-top:-15px;*/
 }
 .center-wrapper {
 	width:450px;

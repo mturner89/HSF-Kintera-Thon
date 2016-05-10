@@ -624,10 +624,22 @@ table {
 	text-decoration:none;
 	color:#777;
 	text-transform:uppercase;
+	font-size:10px;
+}
+.footerLink:hover,
+.footerLink:visited,
+.footerLink:active {
+	color:#777
+	text-decoration:underline;
 }
 .footer > p {
 	font-size:11px;
 	color:#333;
+	text-align:center;
+}
+.footercopyright {
+	color:#777;
+	font-size:10px;
 }
 
 

@@ -319,8 +319,11 @@ html {
 		border-bottom:1px solid #ccc;			
 	}
 	.nav-items  > ul > li > a {
-		padding:10px
+		padding:10px;
 		display:block;
+	}
+	.nav-items  > ul > li > a:hover {
+		color:#fff;
 	}
 	.nav-items > ul > li:hover {
 		background-color:#da291c;

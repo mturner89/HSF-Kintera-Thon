@@ -14,3 +14,18 @@ $(document).ready(function() {
     }
   });
 });
+
+$(document).ready(function () {
+	var leftwrapper = $(".left-wrapper").height();
+	var bodywrapper = $(".body-wrapper").height();
+	if (leftwrapper >= bodywrapper) {	
+	  var footerheight = (leftwrapper - bodywrapper);
+		$("#contactfooter").css("margin-top",""+ footerheight +"px");
+	}
+/*	else if (bodywrapper >= leftwrapper) {	
+	  var footerheight = (bodywrapper - leftwrapper) + 200;
+		$("#contactfooter").css("margin-top",""+ footerheight +"px");
+	}*/
+	else {		
+	}
+});

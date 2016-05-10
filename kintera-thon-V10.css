@@ -261,6 +261,15 @@ html {
 	padding-left:10px;
 	padding-right:10px;	
 }
+.nav-items  > ul > li > a{	
+	color:#252528;
+	text-decoration:none;
+}
+.nav-items  > ul > li > a:hover,
+.nav-items  > ul > li > a:active{	
+	color:#fff;
+	text-decoration:none;
+}
 .nav-menu {
 	display:none;
 }

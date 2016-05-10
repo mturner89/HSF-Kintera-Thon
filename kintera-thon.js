@@ -6,7 +6,8 @@ $(document).ready(function() {
       $(".nav-items").css({
         display: "block"
       });
-    } else {
+    } 
+    else {
       $(".nav-items").css({
         display: "none"
       });

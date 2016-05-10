@@ -545,10 +545,13 @@ table {
 	margin-top:5px;
 	margin:0px;
 }
-.left-nav > ul  > li{
+.left-nav > ul  > li,
+.left-nav > ul  > li > a{
 	margin-top:10px;
 	margin-bottom:10px;
 	font-weight:300;
+	color:#5d646c;
+	text-decoration:none;
 }
 
 /************************* Body contents Styles ***************************/

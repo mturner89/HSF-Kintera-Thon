@@ -624,6 +624,34 @@ table {
 .top-fundraisers > li:nth-child(2n) {
 	background-color:#f5f5f5;
 }
+
+/**************************************** Regsiter/Login/Sponsor Button ******************************/
+
+.col02 {width:528px;padding:0 20px 68px 20px;background:#fff url() 20px bottom no-repeat;}
+
+	.col02 #pagetitle {display:none;}
+	.col02 table {width:100%;}
+	.col02 h1 {font:bold 24px arial,helvetica,sans-serif;color:#4d627e;padding-top:14px;}
+	.col02 h2 {font:bold 16px arial,helvetica,sans-serif;color:#777777;margin-bottom:0px;}
+	.col02 p, li {font:normal 12px arial,helvetica,sans-serif;line-height:150%;}
+	.col02 td {font:normal 12px arial,helvetica,sans-serif;line-height:150%;}
+	.col02 li {margin-bottom:10px;}
+	.col02 ul li {list-style-type:square;}
+
+	.col02 #tabs {height:130px;padding:10px 0 0 60px;margin:0;}
+	.col02 #tabs ul {margin:0;padding:0;list-style-type:none;}
+	.col02 #tabs li {display:inline;}
+	.col02 #tabs li a {margin:0;height:100px;display:block;float:left;text-indent:-3000px;}
+	.col02 #tabs li#register a {width:119px;background: url(/atf/cf/{4500ebf0-553d-4420-bd0d-c82ad42de441}/FFH-BUTTONS_REG.JPG) 0 0 no-repeat;}
+	.col02 #tabs li#register a:hover {background: url(/atf/cf/{4500ebf0-553d-4420-bd0d-c82ad42de441}/FFH-BUTTONS_REG.JPG) 0 -100px no-repeat;}
+	.col02 #tabs li#setup a {width:119px;background: url(/atf/cf/%7B4500ebf0-553d-4420-bd0d-c82ad42de441%7D/button-setup.jpg) 0 0 no-repeat;}
+	.col02 #tabs li#setup a:hover {background: url(/atf/cf/%7B4500ebf0-553d-4420-bd0d-c82ad42de441%7D/button-setup.jpg) 0 -100px no-repeat;}
+	.col02 #tabs li#login a {width:119px;background: url(/atf/cf/{4500ebf0-553d-4420-bd0d-c82ad42de441}/FFH-BUTTONS_LOG.JPG) 0 0 no-repeat;}
+	.col02 #tabs li#login a:hover {background: url(/atf/cf/{4500ebf0-553d-4420-bd0d-c82ad42de441}/FFH-BUTTONS_LOG.JPG) 0 -100px no-repeat;}
+	.col02 #tabs li#sponsor a {width:119px;background: url(/atf/cf/{4500ebf0-553d-4420-bd0d-c82ad42de441}/FFH-BUTTONS_SPONSOR.JPG) 0 0 no-repeat;}
+	.col02 #tabs li#sponsor a:hover {background: url(/atf/cf/{4500ebf0-553d-4420-bd0d-c82ad42de441}/FFH-BUTTONS_SPONSOR.JPG) 0 -100px no-repeat;}
+
+
 /******************************* Footer Styles ****************************************/
 #contactfooter {
 	text-align:center;
